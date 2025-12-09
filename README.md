@@ -8,7 +8,8 @@ The process includes data type checking, data cleaning, exploratory data analysi
 
 
 
-About Dataset
+#About Dataset
+
 The dataset used in this project was obtained from Kaggle, titled “Restaurant Sales Report 2024–2025”, posted by Alexand Chen. 
 (https://www.kaggle.com/datasets/alexandchen/restaurant-sales-report-2024-2025?select=restaurant_sales_data.csv) 
 
