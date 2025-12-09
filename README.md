@@ -6,12 +6,14 @@ The project aims to explore insights from restaurant sales data and identify the
 
 The process includes data type checking, data cleaning, exploratory data analysis (EDA), data visualization and dashboard creation, feature selection, data pre-processing before modeling, data pipeline development, model building, and model evaluation.
 
+---
 
-
-#About Dataset
+**About Dataset**
 
 The dataset used in this project was obtained from Kaggle, titled “Restaurant Sales Report 2024–2025”, posted by Alexand Chen. 
 (https://www.kaggle.com/datasets/alexandchen/restaurant-sales-report-2024-2025?select=restaurant_sales_data.csv) 
+
+Description:
 
 This dataset offers a granular, item-level view of daily sales from a diverse group of 50 restaurants, spanning a full year from January 2024 to January 2025. It serves as a comprehensive resource for time-series analysis, demand forecasting, and investigating the various factors that influence customer purchasing habits across different restaurant types, including Cafes, Casual Dining, Fine Dining, Food Stalls, and Kopitiams.
 
