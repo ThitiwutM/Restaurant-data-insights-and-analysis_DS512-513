@@ -26,3 +26,26 @@ Description:
 This dataset offers a granular, item-level view of daily sales from a diverse group of 50 restaurants, spanning a full year from January 2024 to January 2025. It serves as a comprehensive resource for time-series analysis, demand forecasting, and investigating the various factors that influence customer purchasing habits across different restaurant types, including Cafes, Casual Dining, Fine Dining, Food Stalls, and Kopitiams.
 
 Each row represents the total quantity sold of a specific menu item at a single restaurant on a given day. The dataset is enriched with valuable contextual information, such as weather conditions, promotions, and special events. It also includes detailed financial metrics for each menu item, including the typical ingredient cost, the observed market price, and the actual selling price, making it ideal for analyzing pricing strategies and promotional effectiveness.
+
+---
+
+**การวิเคราะห์ปัจจัยที่มีผลต่อยอดขายและการทำนายปริมาณการขายของร้านอาหารเพื่อวางแผนกลยุทธ์กระตุ้นยอดขาย**
+
+**1. การวิเคราะห์ปัจจัยที่มีผลต่อยอดขาย**
+
+ปัจจัยที่ส่งผลต่อยอดขาย​: สภาพอากาศแดดให้ยอดขายสูงสุด 298 หน่วย (+13% จากวันฝน) โปรโมชั่นเพิ่มยอดขาย +92% และเหตุการณ์พิเศษเพิ่ม +29% Fine Dining มีกำไรสูงสุด 255 บาท แต่ขายน้อย ขณะที่ Food Stall ขายมาก 311 หน่วย แต่กำไรต่ำ 61 บาท อาหารเช้าขายได้มากกว่าเที่ยง-เย็น 85-119%​
+
+ประสิทธิภาพการกำหนดราคาและโปรโมชั่น​: ราคามีความสัมพันธ์เชิงลบกับยอดขาย (r = -0.54) การให้ส่วนลดเพิ่มยอดขาย +97% แต่ลดกำไรต่อหน่วย -55% โปรโมชั่นเพิ่มยอดขาย +92% แต่ลดกำไรต่อหน่วย -39% (จาก 121 เหลือ 74 บาท) อย่างไรก็ตามกำไรรวมยังเพิ่มขึ้นเนื่องจากปริมาณขายที่สูงขึ้นมาก
+
+**2. การทำนายปริมาณการขายของร้านอาหาร**
+
+จากการกำหนด Target เป็น quantity_sold และ Features เป็น lag1, actual_selling_price, weather_condition, has_promotion, and special_event
+
+Lasso regression เป็นโมเดลทำนายปริมาณาการขายที่ให้ค่า R2 สูงสุด รวมถึง MAE และ RMSE น้อยที่สุด​ แต่ค่า R2 ที่ได้ยังต่ำ มีค่าเพียง 0.5639
+
+ดังนั้นอาจจะต้องมีการพํนาโมเดลต่อไป โดยมีข้อเสนอแนะดังนี้
+- อาจพิจารณาใช้ data ที่เป็น numerical แทน categorical เพื่อความแม่นยำในการทำนาย เช่น อุณหภูมิ ปริมาณฝน และ เปอร์เซ็นต์ส่วนลดค่าอาหาร​
+- ใช้การ split data ตามเวลา เนื่องจากข้อมูลเป็น time-series แทน random split​
+- พิจารณาโมเดล regression อื่น ๆ ร่วมด้วย เช่น kNN, SVM, และ อื่นๆ​
+- พิจารณาใช้การทำนายแบบ regression ร่วมกับการตีความปัจจัยที่ส่งผลต่อยอดขายจากโมเดลด้วย SHAP ​
+
