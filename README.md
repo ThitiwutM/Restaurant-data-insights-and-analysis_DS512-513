@@ -205,6 +205,6 @@ Sunny → 251 หน่วย / Cloudy → 249 หน่วย / Rainy → 227 �
 ✔️ การสร้าง Data Pipeline /
 ✔️ การสร้างและประเมินโมเดล (Model Building & Evaluation)
 
-📌 สามารถติดตามโปรเจคฉบับเต็มได้ที่ลิงก์ด้านล่างนี้
+📌 สามารถติดตามโปรเจคฉบับเต็มได้ที่ลิงก์ด้านล่างนี้ 👇
 
-https://github.com/ThitiwutM/Restaurant-data-Quantity-sold-prediction_DS514-515
+🔗 GitHub Repository: https://github.com/ThitiwutM/Restaurant-data-Quantity-sold-prediction_DS514-515
