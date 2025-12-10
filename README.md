@@ -39,7 +39,7 @@ The analytical workflow includes:
 
 ข้อมูลชุดนี้นำมาจาก Kaggle โพสต์โดย คุณ Alexand Chen (https://www.kaggle.com/datasets/alexandchen/restaurant-sales-report-2024-2025)
 
-Dataset ในรูปแบบ csv ไฟล์ สามารถดาวน์โหลดได้จาก restaurant_dataset.csv
+Dataset ในรูปแบบ csv ไฟล์ สามารถดาวน์โหลดได้จาก restaurant_dataset.csv (https://github.com/ThitiwutM/Restaurant-data-insights-and-analysis_DS512-513/blob/2574a13c6e83485b0acc07a17904733ea60ee265/restaurant_dataset.csv)
 
 📊 ชุดข้อมูลนี้ประกอบด้วย:
 
