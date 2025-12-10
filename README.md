@@ -14,7 +14,7 @@ The process includes data type checking, data cleaning, exploratory data analysi
 
 กระบวนการทำงานประกอบด้วย การตรวจสอบประเภทข้อมูล การทำความสะอาดข้อมูล การวิเคราะห์ข้อมูลเบื้องต้น (EDA) การสร้างภาพข้อมูลและแดชบอร์ด การคัดเลือกตัวแปรสำหรับโมเดล การเตรียมข้อมูลก่อนสร้างโมเดล การพัฒนา data pipeline การสร้างโมเดล และการประเมินผลโมเดล
 
-![](https://github.com/ThitiwutM/Restaurant-data-insights-and-prediction/blob/main/project%20framwork.jpg?raw=true)
+![](https://github.com/ThitiwutM/Restaurant-data-insights-and-prediction/blob/main/project%20scope.jpg?raw=true)
 
 ---
 
